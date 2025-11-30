@@ -70,9 +70,9 @@ export default function Navbar({
                     <div className="bg-[#0070ba] p-2 rounded-lg">
                         <FaGlobe className="text-white w-5 h-5" />
                     </div>
-                    <span className="text-2xl font-bold text-gray-900 tracking-tight">
+                    <h1 className="text-2xl font-bold text-gray-900 tracking-tight">
                         {logoText}
-                    </span>
+                    </h1>
                 </div>
 
                 <div className={`hidden md:block absolute left-1/2 transform -translate-x-1/2 transition-all duration-500 ease-in-out ${isScrolled

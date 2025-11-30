@@ -1,7 +1,6 @@
 import { CiCircleInfo } from "react-icons/ci";
-import { FaBuilding, FaCcMastercard, FaCcVisa, FaDhl, FaFacebook, FaFedex, FaInstagram, FaLinkedin, FaTiktok, FaViber, FaWhatsapp, FaYoutube } from "react-icons/fa";
-import { FaRegCircleQuestion } from "react-icons/fa6";
-import { MdEmail, MdInfo, MdPhone } from "react-icons/md";
+import { FaCcMastercard, FaCcVisa, FaDhl, FaFacebook, FaFedex, FaInstagram, FaLinkedin, FaTiktok, FaViber, FaWhatsapp, FaYoutube } from "react-icons/fa";
+import { FaEnvelope, FaRegCircleQuestion, FaBuilding, FaCircleInfo, FaPhone } from "react-icons/fa6";
 
 export default function Footer() {
 
@@ -102,7 +101,7 @@ export default function Footer() {
                             <br />123 Shopping Lane, Kathmandu, Nepal
                         </p>
                         <div className="flex gap-2 items-center text-gray-400">
-                            <MdPhone className="w-4 h-4" />
+                            <FaPhone className="w-4 h-4" />
                             <a href="tel:+977-9841002000" className="hover:text-white">+977-9841002000</a>
                         </div>
                         <div className="flex gap-2 items-center text-gray-400 pt-1">
@@ -116,15 +115,15 @@ export default function Footer() {
                         <h4 className="font-semibold text-lg mb-4">Email Address</h4>
                         <div className="space-y-2 text-gray-400 text-sm">
                             <div className="flex gap-2 items-start">
-                                <MdEmail className="w-4 h-4" />
+                                <FaEnvelope className="w-5 h-5" />
                                 <a href="mailto:support@eyana.com" className="hover:text-white">support@eyana.com</a>
                             </div>
                             <div className="flex gap-2 items-start">
-                                <FaBuilding className="w-4 h-4" />
+                                <FaBuilding className="w-5 h-5" />
                                 <a href="mailto:corporate@eyana.com" className="hover:text-white">corporate@eyana.com</a>
                             </div>
                             <div className="flex gap-2 items-start">
-                                <MdInfo className="w-4 h-4" />
+                                <FaCircleInfo className="w-5 h-5" />
                                 <a href="mailto:inquiry@eyana.com" className="hover:text-white">inquiry@eyana.com</a>
                             </div>
                         </div>
@@ -133,7 +132,7 @@ export default function Footer() {
                     {/* Partners */}
                     <div>
                         <h4 className="font-semibold text-lg mb-4">Our Business Partners</h4>
-                        <p className="text-gray-400 text-sm mb-4">We partner with top logistics and payment providers.</p>
+                        <p className="text-gray-400 text-sm mb-4">We partner with world-class logistics and payment providers to ensure a seamless experience.</p>
                         <div className="flex flex-wrap gap-4">
                             <FaDhl className="w-12 h-10 text-gray-500" />
                             <FaFedex className="w-12 h-10 text-gray-500" />
@@ -147,24 +146,24 @@ export default function Footer() {
                 <div className="border-t border-gray-800 mt-12 pt-12 flex flex-col lg:flex-row items-center justify-between gap-6">
                     <div className="text-center lg:text-left">
                         <h3 className="text-2xl font-semibold">Stay connected with us</h3>
-                        <p className="text-gray-400 text-sm mt-2">Subscribe for updates, offers, and news!</p>
+                        <p className="text-gray-400 text-sm mt-2">Subscribe to get free updates on offers, discounts and anything new!</p>
                     </div>
 
-                    <form className="w-full max-w-md flex items-center bg-gray-800 rounded-full p-2 border border-gray-700">
+                    <form className="w-full max-w-md flex items-center bg-gray-800 rounded-full p-2 border border-gray-700 focus-within:ring-2 focus-within:ring-[#0070ba] transition-all">
                         <input
                             type="email"
-                            placeholder="Enter your email..."
+                            placeholder="Enter your email address..."
                             className="flex-1 bg-transparent text-white px-4 py-2 placeholder-gray-500 outline-none" />
                         <button
                             type="submit"
-                            className="bg-primary px-6 py-2 rounded-full text-white hover:bg-blue-900 font-semibold transition">
+                            className="bg-primary px-6 py-2 rounded-full text-white hover:bg-[#142C8E] cursor-pointer font-semibold transition-colors shrink-0">
                             Subscribe
                         </button>
                     </form>
                 </div>
 
                 <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500 text-sm">
-                    © 2025 Eyana Enterprise. All rights reserved.
+                    © 2024 Eyana Enterprise. All rights reserved.
                 </div>
             </div>
         </footer>

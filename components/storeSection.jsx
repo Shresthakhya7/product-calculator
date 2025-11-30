@@ -17,40 +17,40 @@ export default function StoreSection() {
 
     const stores = [
         // Row 1
-        { name: 'Amazon.in', logo: <FaAmazon className='w-7 h-7' />, category: 'Online Super Stores', color: 'text-gray-700' },
-        { name: 'Flipkart', logo: 'f', category: 'Online Super Stores', color: 'bg-blue-100 rounded-full text-[#0070ba]' },
-        { name: 'Myntra', logo: 'M', category: 'Clothing & Accessories', color: 'text-pink-500' },
-        { name: 'Nykaa', logo: 'N', category: 'Online Super Stores', color: 'text-pink-600' },
-        { name: 'Ajio', logo: 'A', category: 'Clothing & Accessories', color: 'bg-black rounded-full text-white' },
-        { name: 'Zara', logo: 'Z', category: 'Clothing & Accessories', color: 'text-black' },
+        { name: 'Amazon.in', logo: <FaAmazon />, category: 'Online Super Stores', color: ' text-3xl text-gray-700' },
+        { name: 'Flipkart', logo: 'f', category: 'Online Super Stores', color: 'bg-blue-100 text-xl rounded-full text-[#0070ba]' },
+        { name: 'Myntra', logo: 'M', category: 'Clothing & Accessories', color: 'text-pink-500 text-xl' },
+        { name: 'Nykaa', logo: 'N', category: 'Online Super Stores', color: 'text-pink-600 text-xl' },
+        { name: 'Ajio', logo: 'A', category: 'Clothing & Accessories', color: 'bg-black rounded-full text-white text-lg' },
+        { name: 'Zara', logo: 'Z', category: 'Clothing & Accessories', color: 'text-black font-serif text-2xl' },
 
         // Row 2
-        { name: 'Uniqlo', logo: 'U', category: 'Clothing & Accessories', color: 'bg-red-600 text-white' },
-        { name: 'ChicMe', logo: 'C', category: 'Clothing & Accessories', color: 'text-gray-800' },
-        { name: 'H&M', logo: 'H&M', category: 'Clothing & Accessories', color: 'text-red-600' },
-        { name: 'FirstCry', logo: <FaBaby className='w-7 h-7' />, category: 'Online Super Stores', color: 'text-blue-400' },
-        { name: 'Medhey Travel', logo: <FaPlane className='w-7 h-7' />, category: 'Online Super Stores', color: 'text-teal-500' },
-        { name: 'Meesho', logo: 'm', category: 'Online Super Stores', color: 'text-pink-600' },
+        { name: 'Uniqlo', logo: 'U', category: 'Clothing & Accessories', color: 'bg-red-600 text-white text-lg' },
+        { name: 'ChicMe', logo: 'C', category: 'Clothing & Accessories', color: 'text-gray-800 text-xl' },
+        { name: 'H&M', logo: 'H&M', category: 'Clothing & Accessories', color: 'text-red-600 text-xl' },
+        { name: 'FirstCry', logo: <FaBaby />, category: 'Online Super Stores', color: 'text-blue-400 text-3xl' },
+        { name: 'Medhey Travel', logo: <FaPlane />, category: 'Online Super Stores', color: 'text-teal-500 text-3xl' },
+        { name: 'Meesho', logo: 'm', category: 'Online Super Stores', color: 'text-pink-600 text-xl' },
 
         // Row 3
-        { name: 'Outdoor Gear', logo: <FaMountain className='w-7 h-7' />, category: 'Clothing & Accessories', color: 'text-green-700' },
-        { name: 'Decathlon', logo: 'D', category: 'Clothing & Accessories', color: 'bg-blue-600 text-white' },
-        { name: 'Lenskart', logo: <FaGlasses className='w-7 h-7' />, category: 'Clothing & Accessories', color: 'text-cyan-600 ' },
-        { name: 'GAP', logo: 'GAP', category: 'Clothing & Accessories', color: 'bg-blue-900 text-white' },
-        { name: 'Tira Beauty', logo: <FaSpa className='w-7 h-7' />, category: 'Online Super Stores', color: 'text-rose-400' },
-        { name: 'Puma', logo: <FaCat className='w-7 h-7' />, category: 'Clothing & Accessories', color: 'text-black' },
+        { name: 'Outdoor Gear', logo: <FaMountain />, category: 'Clothing & Accessories', color: 'text-green-700 text-3xl' },
+        { name: 'Decathlon', logo: 'D', category: 'Clothing & Accessories', color: 'bg-blue-600 text-white text-lg' },
+        { name: 'Lenskart', logo: <FaGlasses />, category: 'Clothing & Accessories', color: 'text-cyan-600 text-3xl ' },
+        { name: 'GAP', logo: 'GAP', category: 'Clothing & Accessories', color: 'bg-blue-900 text-white text-lg' },
+        { name: 'Tira Beauty', logo: <FaSpa />, category: 'Online Super Stores', color: 'text-rose-400 text-3xl' },
+        { name: 'Puma', logo: <FaCat />, category: 'Clothing & Accessories', color: 'text-black text-3xl' },
 
         // Row 4
-        { name: 'Reebok', logo: 'R', category: 'Clothing & Accessories', color: 'text-red-600' },
-        { name: 'Eyejack', logo: <FaRegEye className='w-7 h-7' />, category: 'Clothing & Accessories', color: 'text-gray-700' },
-        { name: 'Columbia', logo: <FaGem className='w-7 h-7' />, category: 'Clothing & Accessories', color: 'text-blue-700 ' },
-        { name: 'Happenstance', logo: 'H', category: 'Clothing & Accessories', color: 'text-orange-500' },
-        { name: 'Nykaa Fashion', logo: 'NF', category: 'Clothing & Accessories', color: 'text-purple-600 ' },
-        { name: 'Purplle', logo: 'P', category: 'Online Super Stores', color: 'text-purple-500 ' },
+        { name: 'Reebok', logo: 'R', category: 'Clothing & Accessories', color: 'text-red-600 text-xl' },
+        { name: 'Eyejack', logo: <FaRegEye />, category: 'Clothing & Accessories', color: 'text-3xl text-gray-700 text-3xl' },
+        { name: 'Columbia', logo: <FaGem />, category: 'Clothing & Accessories', color: 'text-blue-700 text-3xl ' },
+        { name: 'Happenstance', logo: 'H', category: 'Clothing & Accessories', color: 'text-orange-500 text-xl' },
+        { name: 'Nykaa Fashion', logo: 'NF', category: 'Clothing & Accessories', color: 'text-purple-600 text-xl ' },
+        { name: 'Purplle', logo: 'P', category: 'Online Super Stores', color: 'text-purple-500 text-xl' },
 
         //Row 5
-        { name: 'Andune', logo: 'A', category: 'Clothing & Accessories', color: 'text-gray-800' },
-        { name: 'Ajio Luxe', logo: 'Luxe', category: 'Clothing & Accessories', color: 'bg-black text-[#fbbf24]' },
+        { name: 'Andune', logo: 'A', category: 'Clothing & Accessories', color: 'text-gray-800 text-xl' },
+        { name: 'Ajio Luxe', logo: 'Luxe', category: 'Clothing & Accessories', color: 'bg-black text-[#fbbf24] font-serif text-lg' },
     ];
 
     const filteredStores = stores.filter(store => {
@@ -60,9 +60,9 @@ export default function StoreSection() {
     });
 
     return (
-        <div className="max-w-7xl mx-auto">
+        <div>
             <div className="text-center mb-10">
-                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-3">
+                <h2 className="text-3xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-3">
                     Shop From Your Favorite Indian Stores
                 </h2>
                 <p className="text-gray-500 text-base sm:text-lg max-w-2xl mx-auto">
@@ -78,7 +78,7 @@ export default function StoreSection() {
                             onClick={() => setActiveCategory(category)}
                             className={`px-6 py-2.5 rounded-full font-semibold transition-colors shadow-sm border border-transparent cursor-pointer ${activeCategory === category
                                 ? 'bg-[#0070ba] text-white hover:bg-[#005ea6] shadow-lg scale-105'
-                                : 'bg-white text-gray-700 hover:bg-gray-200 border border-gray-200'
+                                : 'bg-gray-100 text-gray-700 hover:bg-gray-200 border border-gray-200'
                                 }`}
                         >
                             {category}
@@ -107,7 +107,7 @@ export default function StoreSection() {
                     >
                         <div className="flex flex-col items-center text-center">
                             <div
-                                className={`w-12 h-12 ${store.color} flex items-center justify-center text-xl font-bold mb-3 group-hover:scale-110 transition-transform duration-300`}
+                                className={`w-12 h-12 ${store.color} flex items-center justify-center font-bold mb-3 group-hover:scale-110 transition-transform duration-300`}
                             >
                                 {store.logo}
                             </div>
