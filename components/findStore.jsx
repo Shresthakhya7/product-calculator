@@ -18,7 +18,7 @@ export default function FindStore() {
                 </div>
 
                 {/* Heading */}
-                <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-4 tracking-tight">
+                <h3 className="text-2xl sm:text-2xl md:text-3xl font-bold text-white mb-4 tracking-tight">
                     Can't find your store here? No problem!
                 </h3>
 

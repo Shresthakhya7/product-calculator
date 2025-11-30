@@ -1,7 +1,6 @@
 "use client"
 
 import { useState } from "react"
-import { Button } from "@/components/ui/button"
 import {
     Dialog,
     DialogContent,
@@ -76,7 +75,7 @@ export default function ProductDialog() {
             tax: 4799.81,
             finalPrice: 48868.05,
             quantity: parseInt(quantity) || 1,
-            specialInstructions: specialInstructions || productUrl
+            url:  productUrl
         }
         setProducts([...products, newProduct])
         handleCloseProductDetails()
@@ -115,13 +114,13 @@ export default function ProductDialog() {
     return (<>
         {products.length === 0 ? (
             <div className="mb-8">
-                <Button
+                <button
                     onClick={() => setIsDialogOpen(true)}
-                    className="w-full px-6 py-8 rounded-3xl bg-[#0070ba] hover:bg-[#142C8E] border-2 border-[#0070ba] text-base transition-all flex items-center justify-center space-x-3 shadow-lg hover:shadow-xl transform hover:scale-[1.02] font-semibold cursor-pointer"
+                    className="w-full px-6 py-8 rounded-3xl text-white bg-[#0070ba] hover:bg-[#142C8E] border-2 border-[#0070ba] text-base transition-all flex items-center justify-center space-x-3 shadow-lg hover:shadow-xl transform hover:scale-[1.02] font-semibold cursor-pointer"
                 >
                     <FaPlus className="w-5 h-5" />
                     <span>Add New Product</span>
-                </Button>
+                </button>
             </div>
         ) : (
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
@@ -134,12 +133,12 @@ export default function ProductDialog() {
                                 <div className="flex-1 flex flex-col">
                                     <div className="bg-white rounded-2xl shadow-[#0000000D] border border-gray-100 p-4 md:p-6 flex flex-col h-full">
                                         <div className="bg-gray-100 rounded-xl aspect-4/3 flex items-center justify-center mb-4 md:mb-6 text-gray-400">
-                                            <FaLaptop className="text-5xl md:text-6xl text-gray-400" />
+                                            <FaLaptop className="text-6xl md:text-6xl text-gray-400" />
                                         </div>
 
                                         <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-1 truncate">{product.name}</h3>
                                         <div className="flex items-center gap-2 mb-4">
-                                            <p className="text-sm text-gray-500 truncate flex-1">{product.specialInstructions.substring(0, 30)}...
+                                            <p className="text-sm text-gray-500 truncate flex-1">{product.url.substring(0, 30)}...
                                             </p>
                                             <a href="#">
                                                 <FaArrowUpRightFromSquare className="w-4 h-4 text-[#0070ba]" />
@@ -231,7 +230,7 @@ export default function ProductDialog() {
 
                 {/* Right Column - Price Summary */}
                 <div className="lg:col-span-1">
-                    <div className="glass-effect rounded-3xl p-6 md:p-8 shadow-xl sticky top-20 md:top-28">
+                    <div className="glass-effect rounded-3xl p-6 md:p-8 shadow-xl sticky top-28 md:top-28">
                         <div className="flex items-center space-x-3 mb-6">
                             <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
                                 <FaCalculator className="text-green-600" />
@@ -305,12 +304,12 @@ export default function ProductDialog() {
                         <Label htmlFor="product-url" className="block text-base font-bold text-gray-900">
                             Product URL <span className="text-red-500">*</span>
                         </Label>
-                        <Input
+                        <input
                             id="product-url"
-                            placeholder="Paste product link or enter product details..."
-                            className={`w-full px-5 py-4 text-base border-2 rounded-xl focus:outline-none transition-all bg-white ${urlError
+                            placeholder="Paste product link here..."
+                            className={`w-full px-4 py-3 text-base border-2 rounded-2xl focus:outline-none transition-all bg-gray-50/50 focus:bg-white shadow-sm ${urlError
                                 ? 'border-red-500 focus:border-red-500 focus:ring-2 focus:ring-red-100'
-                                : 'border-gray-300 focus:border-[#0070ba] focus:ring-2 focus:ring-blue-100'
+                                : 'border-gray-200 focus:outline:none focus:border-[#0070ba] focus:ring-4 focus:ring-blue-50 '
                                 }`}
                             value={productUrl}
                             onChange={(e) => {
@@ -324,16 +323,16 @@ export default function ProductDialog() {
                         )}
                     </div>
                     <div className="text-sm text-gray-600 flex items-start space-x-2 mt-4">
-                        <FaCircleInfo className="w-4 h-4 text-[#0070ba] mt-0.5 shrink-0" />
+                        <FaCircleInfo className="w-4 h-4 text-[#0070ba] mt-0.5" />
                         <span>
                             Paste the product link from Amazon, eBay, Etsy, or any supported store.{" "}
-                            <a href="#" className="text-[#0070ba] font-medium hover:underline">
+                            <a href="#" className="text-[#0070ba] font-medium hover:underline ml-1">
                                 See all supported stores
                             </a>
                         </span>
                     </div>
                 </div>
-                <div className="bg-gray-50 px-8 py-6 rounded-b-3xl border-t border-gray-200 flex gap-4">
+                <div className="bg-gray-50 px-8 py-6 rounded-b-3xl border-t border-gray-200 flex gap-3">
                     <button
                         onClick={() => handleDialogClose(false)}
                         className="flex-1 cursor-pointer bg-white border-2 border-gray-300 text-gray-700 px-6 py-3.5 rounded-xl hover:bg-gray-100 font-semibold text-base transition-all transform hover:scale-[1.02]"
@@ -400,7 +399,7 @@ export default function ProductDialog() {
                 <div className="overflow-y-auto flex-1 scrollbar-hide">
                     <div className="px-8 py-6 space-y-6">
                         <div className="bg-linear-to-br from-blue-50 to-indigo-50 rounded-2xl p-6 border-2 border-blue-100">
-                            <Label className="text-sm font-semibold text-gray-700 mb-3 block uppercase tracking-wide">Product Preview</Label>
+                            <label className="text-sm font-semibold text-gray-700 mb-3 block uppercase tracking-wide">Product Preview</label>
                             <div className="bg-white rounded-xl aspect-square max-w-xs mx-auto flex items-center justify-center border-2 border-gray-200 shadow-sm">
                                 <FaLaptop className="text-6xl text-[#0070ba]" />
                             </div>
@@ -440,7 +439,7 @@ export default function ProductDialog() {
                         </div>
                         <div className="bg-amber-50/30 rounded-2xl p-6 border-2 border-amber-200/50 space-y-6">
                             <h4 className="text-sm font-semibold text-gray-700 uppercase tracking-wide flex items-center gap-2">
-                                <FaPenToSquare className="w-5 h-5 text-amber-600" />
+                                <FaPenToSquare className="w-4 h-4 text-amber-600" />
                                 Order Details
                             </h4>
                             <div>
