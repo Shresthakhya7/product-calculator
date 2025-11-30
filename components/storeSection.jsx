@@ -36,7 +36,7 @@ export default function StoreSection() {
         { name: 'Outdoor Gear', logo: <FaMountain />, category: 'Clothing & Accessories', color: 'text-green-700 text-3xl' },
         { name: 'Decathlon', logo: 'D', category: 'Clothing & Accessories', color: 'bg-blue-600 text-white text-lg' },
         { name: 'Lenskart', logo: <FaGlasses />, category: 'Clothing & Accessories', color: 'text-cyan-600 text-3xl ' },
-        { name: 'GAP', logo: 'GAP', category: 'Clothing & Accessories', color: 'bg-blue-900 text-white text-lg' },
+        { name: 'GAP', logo: 'GAP', category: 'Clothing & Accessories', color: 'bg-blue-900 font-serif text-white text-lg' },
         { name: 'Tira Beauty', logo: <FaSpa />, category: 'Online Super Stores', color: 'text-rose-400 text-3xl' },
         { name: 'Puma', logo: <FaCat />, category: 'Clothing & Accessories', color: 'text-black text-3xl' },
 
